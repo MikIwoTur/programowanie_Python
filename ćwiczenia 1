@@ -1,0 +1,43 @@
+# zadanie 1
+
+lista_nuk = "ATGCATATGACTCAATGCCCATTAAAAA"
+liczba_nuk = len(lista_nuk)
+pary_GC = lista_nuk.count("GC")
+proc_par_GC = (pary_GC * 100) / liczba_nuk
+
+print(round(proc_par_GC, 2))
+# output: 7.14
+
+# zadanie 2
+
+piosenka = "Kocham Pythona kocham go cały dzień i noc"
+
+zmiana = piosenka.split(" ")
+jol = " joł ".join(zmiana)
+print(jol)
+# Output: Kocham joł Pythona joł kocham joł go joł cały joł dzień joł i joł noc
+
+# zadanie 3
+
+print("hej, podaj ponizej swoje imie i nazwisko. Przez to utowrzymy toj nowy email uniwersytecki")
+print("\n")
+
+imie = input("podaj imie: ")
+nazwisko = input("podaj nazwisko: ")
+
+email = imie + '.' + nazwisko + '@student.uj.edu.pl'
+print(email.lower())
+
+# zadanie 4
+
+names_list = ["Dill Doe", "Chris P. Bacon", "Ben Dover"]
+
+names_list.append("Harry Dixon")
+
+input = input("Podaję imię : ")
+
+b = input in names_list
+
+print(b)
+# podaj imie : "Harry Dixon"
+# Output: True
